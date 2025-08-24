@@ -1,3 +1,24 @@
+1)palindrom 
+
+import java.util.*;
+class Solution {
+    public boolean isPalindrome(int x) {
+        int temp=x;
+        int p=0;
+        while(temp>0){
+            int digit=temp%10;
+            p=(p*10)+digit;
+            temp/=10;
+        }
+        if(x==p){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+}
+
 1) perfect number
 
 import java.util.*;
