@@ -1,4 +1,4 @@
-1)palindrom 
+1)palindrom program
 
 import java.util.*;
 class Solution {
