@@ -1,0 +1,1158 @@
+1) perfect number
+
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  int b=6;
+  int sum=0;
+  for(int i=1;i<b; i++){
+    if(b%i==0){
+      sum+=i;
+    }
+  }
+  System.out.println(sum);
+  if(sum==b){
+    System.out.print("True");  
+  }
+  else{
+    System.out.print("False");  
+  }
+  }
+}
+output
+i/P:6
+o/p:True
+
+i/P:15
+o/p:False
+
+2)Square root of a number
+
+
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  int n=4;
+  double m = Math.sqrt(n);
+  int a = (int) m;
+  System.out.print(a);
+  }
+}
+
+output:
+2
+
+3)swap 2 variable without 3rd variable.
+
+import java.util.*;
+class simple
+{                                                                                                                                                                                        
+  public static void main(String[] args)
+  {
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    System.out.println("Before the swap"+n);
+    int m=sc.nextInt();
+    System.out.println("Before the swap"+m);
+    n=n+m;
+    m=n-m;
+    n=n-m;
+    System.out.println("After the swap"+n);
+    System.out.println("After the swap"+m);
+    sc.close();
+  }
+}
+
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  int[] arr={2,4,7,11};
+  int sum=0;
+  int lastValue = arr[arr.length - 1];
+  for(int i=0;i<arr.length-1;i++){
+    sum+=arr[i];
+  }
+  System.out.println(sum);
+  if(sum==lastValue){
+    System.out.print("true");
+  }
+  else{
+    System.out.print("false");
+  }
+  }
+}
+output:
+5
+Before the swap5
+10
+Before the swap10
+After the swap10
+After the swap5
+
+output:
+13
+true
+
+13
+false
+
+
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  for(int i=1;i<=3;i++){
+    for(int j=1;j<=i;j++){
+      System.out.print("*");
+    }
+  System.out.println();
+  }
+  }
+}
+
+output:
+*
+** 
+***
+
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  for(int i=1;i<=3;i++){
+    for(int j=1;j<=3;j++){
+      System.out.print("*");
+    }
+  System.out.println();
+  }
+  }
+}
+
+output:
+***
+***
+*** 
+
+2)increment and decrement
+
+import java.util.*;
+class simple
+{
+  public static void main(String args[])
+  {
+  int a=5;
+  int b=6;
+  int c=10;
+  System.out.print(a=b);
+  //System.out.print(b--);
+  //System.out.print(c=b--);
+  //System.out.print(a--);
+  //System.out.print(b=a++);
+  //System.out.print(c=++a);
+  //System.out.print(a=++a);
+  System.out.print(a);
+  System.out.print(b);
+  System.out.print(c);
+  }
+}
+
+output:
+6656578857
+
+3)
+
+import java.util.*;
+class simple
+{
+  public static void main(String args[])
+  {
+  int a=-9;
+  int b=-7;
+  int c=20;
+  a--;
+  b--;
+  c--;
+  a=--c;
+  b--;
+  a++;
+  c--;
+  c=--b;
+  a=--c;
+  b=++a;
+  System.out.print(b++);
+  System.out.print(a++);
+  System.out.print(c++);
+  }
+}
+output:
+-10-10-11
+
+4)else if
+
+import java.util.*;
+class simple
+{
+public static void main(String[] args)
+{
+int a=19;
+int b=6;
+int c=50;
+if(a>b && a>c){
+System.out.println(a);
+}
+else if(b>a && b>c){
+System.out.println(b);
+}
+else{
+System.out.println(c);
+}
+}
+}
+
+output:
+50
+
+5)How to convert a input lower case into uppercase and uppercase into lower case the output should be in ASCI value in java
+
+import java.util.*;
+class Asci{
+public static void main(String args[]){
+char ch='a';
+if(ch>=65 && ch<=90){
+System.out.print((char)(ch+32));
+}
+else if(ch>=97 && ch<=122){
+System.out.print((char)(ch-32));
+}
+else{
+System.out.print("not ASCI values");
+}
+}
+}
+
+6)print 2 table
+import java.util.*;
+class simple
+{
+public static void main(String[] args)
+{
+int n=2;
+for(int i=1;i<=10;i++){
+int a=n*i;
+System.out.println(n+"x"+i+"="+a);
+}
+}
+}
+ 
+output:
+2x1=2
+2x2=4
+2x3=6
+2x4=8
+2x5=10
+2x6=12
+2x7=14
+2x8=16
+2x9=18
+2x10=20
+
+6)rigth angle triangle
+
+import java.util.*;
+class simple
+{
+   public static void main(String[] args)
+   {
+   int n=5;
+   for(int i=1;i<=n;i++){
+      for(int j=1;j<i+1;j++){
+          System.out.print("*");
+      }
+   System.out.println( );
+   }
+}
+}
+output:
+*
+**
+***
+****
+*****
+
+7)
+import java.util.*;
+class simple
+{
+public static void main(String[] args)
+{
+int n=5;
+for(int r=1;r<=n;r++){
+for(int c=1;c<=n;c++){
+if(r==1||r==n||c==1||c==n){
+System.out.print("*");
+}
+else{
+System.out.print(" ");
+}
+}
+System.out.println();
+}
+}
+}
+
+output:
+*****
+*   *
+*   *
+*   *
+*****
+
+8)left triangle
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  int n=5;
+  for(int i=1;i<=n;i++){
+      for(int j=i;j<=n-1;j++){
+         System.out.print(" ");
+      }
+      for(int j=1;j<=i;j++){
+          System.out.print("*");
+      }
+   System.out.println();
+  }
+}
+}
+
+output:
+    *
+   **
+  ***
+ ****
+*****
+
+9)whole right triangle
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  int n=5;
+  for(int r=1;r<=n;r++){
+    for(int c=1;c<=n;c++){
+      if(r==n||c==1||r==c){
+      System.out.print("*");
+      }
+      else{
+      System.out.print(" ");
+      }
+    }
+  System.out.println( );
+  }
+}
+}
+
+output:
+*
+**
+* *
+*  *
+*****
+
+10) 
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  int n=5;
+  for(int r=1;r<=n;r++){
+    for(int c=1;c<=n;c++){
+      if(r==n||c==1||r==c||c==n||r==1){
+      System.out.print("* ");
+      }
+      else{
+      System.out.print("  ");
+      }
+    }
+  System.out.println( );
+  }
+}
+}
+
+output:
+* * * * *
+* *     *
+*   *   *
+*     * *
+* * * * *
+
+11)inverse right angle triangle
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  int n=5;
+  for(int i=1;i<=n;i++){
+   for(int j=i-1;j<n;j++){
+     System.out.print("*");
+   }
+  System.out.println(" ");
+  }
+}
+}
+
+output:
+*****
+****
+***
+**
+*
+
+12)
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  int n=5;
+  for(int i=1;i<=n;i++){
+   for(int j=1;j<i+1;j++){
+     System.out.print(" ");
+   }
+   for(int j=i;j<=n;j++){
+     System.out.print(" * ");
+   }
+  System.out.println(" ");
+  }
+}
+}
+
+output:
+  *  *  *  *  *
+   *  *  *  *
+    *  *  *
+     *  *
+      *
+
+13)
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  int n=5;
+  for(int i=1;i<=n;i++){
+   for(int j=i;j<n;j++){
+     System.out.print(" ");
+   }
+   for(int j=1;j<i+1;j++){
+     System.out.print(" * ");
+   }
+  System.out.println(" ");
+  }
+}
+}
+
+output:
+    *
+    *  *
+   *  *  *
+  *  *  *  *
+ *  *  *  *  *
+
+
+14)
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  int n=5;
+  for(int i=1;i<=n;i++){
+   for(int j=1;j<=i;j++){
+      System.out.print("*");
+   }
+   for (int s = 1; s <= 2 * (n - i); s++) {
+      System.out.print(" ");
+   }
+   if(i==n){
+   for(int j=1;j<=i-1;j++){
+      System.out.print("5");
+   }
+   }
+   else{
+   for(int j=1;j<=i;j++){
+      System.out.print("5");
+   }
+   }
+  System.out.println(" ");
+  }
+}
+}  
+
+output:
+
+*        5
+**      55
+***    555
+****  5555
+*****55555
+
+15) 3D array
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  int a[][][]=new int [2][2][3];
+  Scanner sc=new Scanner(System.in);
+  for(int i=0;i<2;i++){
+   for(int j=0;j<2;j++){
+    for(int k=0;k<3;k++){
+     a[i][j][k]=sc.nextInt();
+    }
+   }
+  }
+for(int i=0;i<2;i++)
+{
+  for(int j=0;j<2;j++)
+  {
+    for(int k=0;k<3;k++)
+    {
+      System.out.print(a[i][j][k]);
+    }
+    System.out.println();
+  }
+  System.out.println();
+ }
+
+  System.out.println();
+}
+}
+
+output:
+23
+34
+56
+67
+88
+98
+67
+45
+67
+43
+23
+56
+233456
+678898
+
+674567
+432356
+
+16)
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  int num=4;
+  int s=1;
+  for(int i=1;i<10;i++)
+  {
+    int s=num*s;
+    System.out.println(s);
+  }
+}
+}
+
+17) i/p:2345
+    o/p:2*3*4*5=120
+    120 is divisible by 6 0r not
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  int product=1;
+  while(n>0){
+    int digit=n%10;
+    product*=digit;
+    n/=10;
+  }
+  if(product%6==0){
+    System.out.println(product+"is divisible by 6");
+  }
+  else{
+    System.out.print(product+"is not divisible by 6");
+  }
+  System.out.print(product);
+}
+}
+
+output:
+2345
+120is divisible by 6
+120
+
+23543
+360is divisible by 6
+360
+
+18)
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  int a[]={1,2,1,3,4,5,2,5};
+  System.out.println("duplicate element");
+  for(int i=0;i<a.length;i++){
+    for(int j=i+1;j<a.length;j++){
+      if(a[i]==a[j]){
+        System.out.print(a[i]);
+      break;
+      }
+    }
+  }
+  }
+}
+
+output:
+
+duplicate element
+125
+
+19)
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  int a[]={1,5,6};
+  int b[]={2,4,7};
+  int c[]=new int[a.length+b.length];
+  int i=0;
+  System.out.println("merged array");
+  for(i=0;i<a.length;i++){
+    c[i]=a[i];
+  }
+  for(int j=0;j<b.length;j++){
+    c[i++]=b[j];
+  }
+  for(int k=0;k<c.length;k++){
+    System.out.print(c[k]+" ");
+  }
+  }
+}
+
+output:
+merged array
+1 5 6 2 4 7
+
+
+20)sort  the given array using inbuild function
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  int a[]={1,6,2,8,4,0,3};
+  int b[]={2,4,7};
+  Arrays.sort(a);
+  for(int num:a){ //num-for each
+    System.out.print(num+" ");
+  }
+  }
+}
+output:
+
+nlog(n)time complexity
+
+21)sort the given array
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  int a[]={1,6,2,8,4,0,3};
+  for(int i=0;i<a.length-1;i++){
+    for(int j=0;j<a.length-1-i;j++){
+      if(a[j]>a[j+1]){
+        int dummy=a[j];
+        a[j]=a[j+1];
+        a[j+1]=dummy;
+      }
+    }
+  }
+  for(int num:a){ //num-for each
+    System.out.print(num+" ");
+  }
+  }
+}
+
+output:
+
+
+8/7/25
+
+22)import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  int n=156;
+  int product=1;
+  int digit=0;
+  int temp=n;
+  while(temp>0){
+    digit=temp%10;
+    //for(int i=0;i<digit;i++){
+      if(digit != 0 && n % digit != 0){
+        System.out.println(n+" not divide by digit"+digit);
+      }
+      else{
+        System.out.println(n+"divide by digit"+digit);
+      }
+
+    //}
+    product*=digit;
+    temp/=10;
+  }
+}
+} 
+
+output:
+156divide by digit6
+156 not divide by digit5
+156divide by digit1
+
+23)sum of square
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  int n=156;
+  int product=1;
+  int digit=0;
+  int s=0;
+  int temp=n;
+  while(temp>0){
+    digit=temp%10;
+    s=(digit*digit)+s;
+    product*=digit;
+    temp/=10;
+  }
+  System.out.println(s);
+  if(n==s){
+    System.out.print(" true");
+  }
+  else{
+    System.out.print("False");
+  }
+}
+}
+
+output:
+62
+False
+
+24)monotonic increasing number or not
+
+import java.util.*;
+class simple
+{
+  public static void main(String[] args)
+  {
+  int n=165;
+  int digit=0;
+  int key=0;
+  int temp=0;
+  while(n>0){
+    digit=n%10;
+    n/=10;
+    if(temp>digit){
+      key=0;
+      System.out.print(n+"is a monotonic");
+    }
+    else if(key == 0){
+    }
+  System.out.print(n+"is not a monotonic");
+  }
+}
+}
+
+25)
+
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  int n=165;
+  int digit=0;
+  int product=0;
+  int temp=n;
+  while(temp>0){
+    digit=temp%10;
+    product+=digit;
+    temp/=10;
+    if(product!=1){
+      temp=product;
+    }
+    else(product==1){
+      System.out.print("True");
+    }
+  }
+}
+}
+correct code
+
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  int n=100;
+  int product=0;
+  int temp=n;
+  while(temp>0){
+    int digit=temp%10;
+    product=product*10+digit;
+    temp/=10;
+  }
+  if(product == 1){
+    System.out.print("true");
+  }
+  else{
+    System.out.print("false");
+  }
+}
+}
+output:
+true
+
+
+8/7/25
+package folder
+
+package pack;
+public class sample{
+    public void show(){
+        System.out.println("package pack");
+    }
+}
+
+package pack1;
+public class sam{
+    public void show(){
+        System.out.println("package pack1");
+    }
+}
+package file
+import pack.*;
+import pack1.sam;
+class train{
+    public static void main(String args[]){
+        sample s=new sample();
+        s.show();
+        sam s1=new sam();
+        s1.show();
+        sample_no s2=new sample_no();
+        s2.show();
+    }
+}
+
+output:
+
+
+package pack
+package pack1
+
+sub package folder
+
+package pack1.sub_package;
+public class sample_no{
+    public void show(){
+        System.out.println("sub package");
+    }
+}
+
+
+1)minimum and maximum element in the array
+
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  int index=0;
+  int a[]={21,5,15,7,30,91,4};
+  for(int i=0;i < a.length;i++){
+    for(int j=0;j < a.length-1-i;j++){
+      if(a[j]>a[j+1]){
+      int dummy=a[j];
+      a[j]=a[j+1];
+      a[j+1]=dummy;
+      }
+    }
+  }
+  for(int num:a)
+  System.out.println(num+" ");
+  System.out.println("minimum element"+a[0]);
+  System.out.print("maximum element"+a[a.length-1]);
+}
+}
+
+output:
+4 
+5 
+7
+15
+21
+30
+91
+91
+first element4
+second element91
+
+2)check if an array is sorted.
+
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  int i;
+  int a[]={21,5,15,7,30,91,4};
+  for(i=0;i < a.length-1;i++){
+    break;
+  }
+  if(i == a.length-1){
+    System.out.println("given array sorted");
+  }
+  else{
+    System.out.println("given array is not sorted");
+  }
+}
+}
+
+output:
+given array is not sorted
+
+3)
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  int n=46,sum=0;
+  while(n>0){
+    int digit=n%10;
+    sum=sum*10+digit;
+    int a=sum%10;
+    n/=10;
+  System.out.print(a);
+  }
+  for(int i=2;i <= a;i=i*2){
+    if(a == i){
+      System.out.println("true");
+    }
+    else{
+     System.out.print("false");
+    }
+  }
+}
+}
+
+4)reorder number
+
+import java.util.*;
+class simple{
+    public static void main(String[] args){
+        int n = 46, sum = 0;
+        while(n > 0){
+            int digit = n % 10;
+            sum = sum * 10 + digit;
+            n /= 10;
+        }
+        System.out.println(sum);
+        for(int i=2;i <= sum;i=i*2){
+          if(sum == i){
+          System.out.println("true");
+          return;
+          }
+        }
+        System.out.print("false");
+    }
+}
+
+output:
+64
+true
+
+10/7
+
+string
+
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  String s="java";
+  String s1=new String("java");
+  s1=s;
+  if(s==s1){
+    System.out.println("yes");
+  }
+  else{
+    System.out.print("no");
+  }
+  if(s.equals(s1)){
+    System.out.println("yes");
+  }
+  else{
+    System.out.print("no");
+  }
+}
+}
+
+output:
+yes
+yes
+
+pattern
+
+1)import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  int n=5;
+  for(int r=1;r<=n;r++){
+    for(int c=1;c<=n;c++){
+      if(r==n || c==1){
+        System.out.print("*");
+      }
+      else{
+        System.out.print(" ");
+      }
+    }
+    System.out.println();
+  }
+}
+}
+
+output:
+
+*
+*
+*
+*
+*****
+
+2)
+if(r==n || c==1 || r==1 || r==3)
+
+output:
+*****
+*    
+*****
+*    
+*****
+
+3)
+if(r==n || r==1 || c==3)
+
+output:
+*****
+  *
+  *
+  *
+*****
+
+3)
+import java.util.*;
+class simple
+{                                                                                                                                                                                         
+  public static void main(String[] args)
+  {
+  int n=5;
+  for(int r=1;r<=n;r++){
+    for(int c=1;c<=n;c++){
+      if(r==1 || r==n || c==1 || c==2 || c==n){
+        System.out.print("* ");
+      }
+      else{
+        System.out.print("  ");
+      }
+    }
+    System.out.println( );
+  }
+}
+}
+
+output:
+* * * * * 
+* *     *
+* *     *
+* *     *
+* * * * *
+
+16/7/25
+
+1)factorial n=5
+
+import java.util.*;
+class reactive {
+    public static void main (String[] args){
+        int n=5;
+        int digit=1;
+        for(int i=1;i<=n;i++){
+            digit=digit*i;
+        }
+        System.out.print(digit);
+    }
+}
+
+output:
+120
