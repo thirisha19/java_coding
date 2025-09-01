@@ -14,7 +14,7 @@ class Leetcode{
         int target = 60;
         int arr[] = twoSum(nums, target);
         for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+ " ");
+            System.out.print(arr[i]+" ");
         }
     }
 }
